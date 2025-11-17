@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Partner?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Light blue background */
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #ff69b4; /* Pink for romance */
+        }
+        img {
+            max-width: 300px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #yesBtn {
+            background-color: #4CAF50; /* Green for yes */
+            color: white;
+        }
+        #noBtn {
+            background-color: #f44336; /* Red for no */
+            color: white;
+        }
+        #response {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dear [Your Crush's Name],</h1>
+    <p>I've been wanting to tell you this for a while...</p>
+    <img src="your-photo.jpg" alt="A photo of us or something special">
+    <p>Will you go on a date with me? Or better yet, be my partner?</p>
+    
+    <button id="yesBtn">Yes!</button>
+    <button id="noBtn">No</button>
+    
+    <div id="response"></div>
+
+    <script>
+        document.getElementById('yesBtn').addEventListener('click', function() {
+            document.getElementById('response').innerHTML = "Yay! I can't wait! ❤️";
+        });
+        document.getElementById('noBtn').addEventListener('click', function() {
+            document.getElementById('response').innerHTML = "That's okay, friends forever! 😊";
+        });
+    </script>
+</body>
+</html>
